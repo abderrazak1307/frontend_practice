@@ -1,0 +1,241 @@
+:root{
+    --dark-color : #1c1c1c;
+    --dark-light-color : #363636;
+    --light-color : #eeeeee;
+    --primary-color: #5865F2;
+}
+body{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 0.8rem;
+}
+*::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: 0;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.icon-btn-lg{
+    width:48px;
+    height:48px;
+}
+.icon-btn-lg > i{
+    font-size: 1.2rem;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 1rem 3rem;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.logo{
+    width:12rem;
+    width:12rem;
+    margin-bottom: 2rem;
+}
+
+.searchbar{
+    margin-bottom: 1.4rem;
+}
+
+.searchbar input{
+    width: 36rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    outline: 0;
+    background-color: var(--dark-light-color);
+    font-size: large;
+    box-shadow: 0px 1px 1px #000000;
+}
+.searchbar button{
+    position: relative;
+    left: -16px;
+    padding: 0.75rem 0.75rem;
+    margin: 0;
+    border-radius: 4px;
+    background-color: var(--dark-light-color);
+    color: var(--light-color);
+    box-shadow: 0px 1px 1px #000000;
+    font-size: large;
+}
+
+.btn{
+    padding: .75rem 1.5rem;
+    border-radius: 0.5rem;
+    outline: 0;
+    border: none;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 600;
+}
+.btn-dark{
+    background-color: rgba(28, 28, 28, 0.75);
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.tag-div{
+    margin-bottom: 2rem;
+}
+.tag-div h1{
+    margin-bottom: .75rem;
+}
+
+.inline-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.checkmark-ul{
+    list-style: url("../img/favicon.svg");
+}
+
+.features-div h3{
+    font-weight: 500;
+    margin-bottom: .75rem;
+}
+
+.cards-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:center;
+}
+.card{
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    max-width: 30ch;
+    background-color: #252525;
+}
+.card img{
+    margin: 1rem 4rem;
+    width:auto
+}
+.card h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.card p{
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+.main-feature-div{
+    padding-top: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+    width: 100vw;
+    background-color: #58b792;
+    text-align: center;
+}
+.main-feature-div::before{
+    background-image: url('../img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content:" ";
+}
+.main-feature-div h1{
+    margin: auto;
+}
+.container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.faq-div{
+    max-width: 768px;
+}
+.faq{
+    text-align: left;
+}
+
+.faq p{
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+.question{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px
+}
+
+.sidebar{
+    position: fixed;
+    right: 0;
+    left: 80%;
+    background-color: #363636;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 0rem 1rem;
+}
+.sidebar h6{
+    margin-bottom: 0;
+}
+.sidebar .menu-list{
+    margin-top: 0.5rem;
+    list-style: none;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+}
+.sidebar .menu-list a{
+    text-decoration: none;
+    color:#eeeeee;
+}
+
+
+.muted {
+    color:#eeeeee;
+    font-size: smaller;
+}
+.invisible {
+    display: none;
+}
+.close-button{
+    position: fixed;
+    right: 0rem;
+    top: 0.5rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}

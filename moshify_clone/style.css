@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background-color: aliceblue;
+}
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+
+.header{
+    background-color: black;
+    padding: 0.5rem 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(107, 107, 107, 0.226);
+}
+.nav-list{
+    display:flex;
+    width: 360px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-item > a{
+    font-weight: 300;
+    color: rgb(221, 221, 221);
+}
+@media screen and (max-width: 768px){
+    .nav-list{
+        margin-top: 0;
+        display:block;
+        width: 100vw;
+    }
+}
+
+.hero{
+    height: 91vh;
+    padding: 0 12rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.hero .hero-left{
+    padding-top: 5rem;
+}
+.hero h1{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color:white;
+}
+.hero p{
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1.2pt;
+    color:rgb(214, 214, 214);
+}
+.hero img{
+    width: auto;
+    height: 600px;
+}
+.hero .btn{
+    background-color: #ff3400;
+    padding: 1rem 3rem;
+    outline: 0;
+    border: 0;
+    border-radius: 2rem;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.start-here{
+    padding-top: 4rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: center;
+}
+.start-here h2{
+    color: #27116b;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+.start-here p{
+    margin-top: 0;
+    color: rgb(144, 132, 168);
+    letter-spacing: -0.2pt;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.start-here input, .start-here button{
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    outline: 0;
+    border: 0;
+}
+.start-here input{
+    width: 400px;
+    position: relative;
+    left: 3rem;
+    color: rgb(144, 132, 168);
+    box-shadow: 0px 0px 20px rgb(144, 132, 168, 0.2);
+}
+.start-here input::placeholder{
+    color: rgb(144, 132, 168);
+}
+.start-here button{
+    position: relative;
+    left: -3rem;
+    background-color: #ff3400;
+    padding: 1rem 3rem;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.start-here .tags{
+    display:flex;
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.start-here .tags li{
+    text-decoration: none;
+    font-weight: 600;
+    color: #27116b;
+}
+.start-here .tags .highlight{
+    background-color: aqua;
+    border-radius: 2rem;
+    padding: .2rem .5rem;
+}
+
+footer{
+    background-color: #232323;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 2rem 10rem 0 10rem;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+footer h3{
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+    font-size: 1rem;
+}
+footer a, footer p{
+    color: rgb(156, 156, 156);
+}
